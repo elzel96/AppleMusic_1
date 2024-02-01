@@ -11,6 +11,7 @@
 		794DB1A32B6C3E4E0094BFE4 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DB1A22B6C3E4E0094BFE4 /* LibraryView.swift */; };
 		794DB1A52B6C3E4F0094BFE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794DB1A42B6C3E4F0094BFE4 /* Assets.xcassets */; };
 		794DB1A82B6C3E4F0094BFE4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 794DB1A72B6C3E4F0094BFE4 /* Preview Assets.xcassets */; };
+		794DB1AF2B6C40470094BFE4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794DB1AE2B6C40470094BFE4 /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		794DB1A22B6C3E4E0094BFE4 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		794DB1A42B6C3E4F0094BFE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		794DB1A72B6C3E4F0094BFE4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		794DB1AE2B6C40470094BFE4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				794DB1A02B6C3E4E0094BFE4 /* AppleMusic_1App.swift */,
 				794DB1A22B6C3E4E0094BFE4 /* LibraryView.swift */,
+				794DB1AE2B6C40470094BFE4 /* TabBarView.swift */,
 				794DB1A42B6C3E4F0094BFE4 /* Assets.xcassets */,
 				794DB1A62B6C3E4F0094BFE4 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				794DB1A32B6C3E4E0094BFE4 /* LibraryView.swift in Sources */,
+				794DB1AF2B6C40470094BFE4 /* TabBarView.swift in Sources */,
 				794DB1A12B6C3E4E0094BFE4 /* AppleMusic_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
