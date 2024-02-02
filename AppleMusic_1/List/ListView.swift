@@ -13,11 +13,15 @@ struct ListView: View {
                                             .foregroundColor(.pink)
                                             .onTapGesture {
                                                 models[index].isPicked.toggle()
+                                                Model.models[index].isPicked.toggle()
                                             }
                         ModelCell(model: models[index])
                     }
                 }
+                .onMove(perform: { IndexSet, index in
+                    self.models.move(fromOffsets: IndexSet, toOffset: index)})
             }
+            .listStyle(.plain)
         }
         .navigationTitle("Медиатека")
         .toolbar {
