@@ -19,7 +19,10 @@ struct ListView: View {
                     }
                 }
                 .onMove(perform: { IndexSet, index in
-                    self.models.move(fromOffsets: IndexSet, toOffset: index)})
+                    self.models.move(fromOffsets: IndexSet, toOffset: index)
+                    Model.models = self.models
+                }
+                )
             }
             .listStyle(.plain)
         }
