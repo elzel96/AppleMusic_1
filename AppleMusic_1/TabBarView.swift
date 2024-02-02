@@ -1,21 +1,19 @@
 import SwiftUI
 
 struct TabBarView: View {
+    
     var body: some View {
         TabView {
-            
             LibraryView()
-                .tabItem {
-                    Image(systemName: "music.note")
-                    Text("Медиатека")
-                }
-            
+            .tabItem {
+                Image(systemName: "music.note")
+                Text("Медиатека")
+            }
             Text("Радио")
                 .tabItem {
                     Image(systemName: "dot.radiowaves.left.and.right")
                     Text("Радио")
                 }
-            
             Text("Поиск")
                 .tabItem {
                     Image(systemName: "magnifyingglass")
@@ -23,6 +21,12 @@ struct TabBarView: View {
                 }
         }
         .accentColor(.pink)
+        .onAppear() {
+            UITabBar.appearance().backgroundColor = .systemGray6
+        }
+        .overlay(alignment: .bottom) {
+            PlayerView()
+        }
     }
 }
 
