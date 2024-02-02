@@ -14,10 +14,7 @@ struct ListView: View {
                                             .onTapGesture {
                                                 models[index].isPicked.toggle()
                                             }
-                        models[index].image
-                            .frame(width: 50, height: 50)
-                            .foregroundColor(Color.pink)
-                        Text(models[index].text)
+                        ModelCell(model: models[index])
                     }
                 }
             }
