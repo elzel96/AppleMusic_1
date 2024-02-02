@@ -16,7 +16,8 @@ struct LibraryView: View {
             }
             .padding(.bottom, 80)
             .navigationTitle("Медиатека")
-            .navigationBarItems(trailing: NavigationLink("Править", destination: PlayerView())
+            .navigationBarItems(trailing: NavigationLink("Править", destination: ListView()
+                .navigationBarBackButtonHidden(true))
                 .foregroundColor(.pink))
         }
     }
