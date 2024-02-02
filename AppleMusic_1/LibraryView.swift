@@ -3,7 +3,6 @@ import SwiftUI
 struct LibraryView: View {
     var body: some View {
         NavigationView {
-            
             VStack(alignment: .center) {
                 Text("Ищете свою музыку?")
                     .bold()
@@ -15,8 +14,11 @@ struct LibraryView: View {
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
             }
+            .padding(.bottom, 80)
+            .navigationTitle("Медиатека")
+            .navigationBarItems(trailing: NavigationLink("Править", destination: PlayerView())
+                .foregroundColor(.pink))
         }
-        .navigationTitle("Медиатека")
     }
 }
 
