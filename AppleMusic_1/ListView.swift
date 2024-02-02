@@ -4,10 +4,12 @@ struct ListView: View {
     let names = ["Misha", "Pasha", "Sasha"]
     
     var body: some View {
-        List {
-            NavigationView {
+        NavigationView {
+            List {
                 ForEach(names, id: \.self) { name in
-                    Text(name)
+                    HStack {
+                        Text(name)
+                    }
                 }
             }
         }
